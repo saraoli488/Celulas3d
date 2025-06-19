@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Visualizador 3D</title>
+  <title>Célula Humana 3D</title>
   <style>
     body { margin: 0; overflow: hidden; }
     canvas { display: block; }
@@ -35,7 +35,7 @@
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
   const loader = new THREE.GLTFLoader();
-  loader.load('modelo.glb', function (gltf) {
+  loader.load('celula_humana.glb', function (gltf) {
     scene.add(gltf.scene);
   }, undefined, function (error) {
     console.error(error);
